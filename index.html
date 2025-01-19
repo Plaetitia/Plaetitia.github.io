@@ -1,29 +1,152 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<link rel="stylesheet" href="style.css"/>
-	<title> Les belles pâtisseries humm </title>
-	<meta charset="UTF-8">
-	</head>
+<html lang="fr">
 
-	<body>
-	<h1>  Les tartes </h1>
-	<p> La tarte Myrtilles / Cassis</p>
-	<div style="text-align: center;"> 
-		<img src= "https://lh4.googleusercontent.com/proxy/ywPYP6mnfbiiRKiM5MMAKDJ-KOeo2xC-vhXRngWfwUh7QuqjZLxjodxXPeeEKBrptrtw1EG8AjfqrVZOMEqCtgoh71suazy_rxEmnHN2RdqJtVYG5PTehgJFdbWyk81jNz11sij8oJ4uI6LZjXN0rRJi9-VixAUTmlRPxl6N5A-OKszaWJn7DgIEkkY-7w">
-		 <div style="text-align: center;"> 
-	  	<p>Chef Cyril Lignac</p>
-	  </div>
-	</div>
-	
-	<p> La tarte citron </p> 
-	<div style="text-align: center;"> 
-	 <img src= "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCxDd6TiTRP6dWM_I-MV9JeWhVEFxeq8IEhAHlo5udY5ye49CwROHxMNkfztgqHyaPKdxnnr09nLd892UF0YVWjGkMREYvrIEmynirR7ei3Y7ukmiZOIfVYXmermSdm_LkFmJ62fRLQPnG/s800/patisserie-cyril-lignac-croquant-gourmand-benoit-couvrand-paris-0.JPG">
-	  <div style="text-align: center;"> 
-	  	<p>Chef Cyril Lignac</p>
-	  </div>
-	</div>
-	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Laetitia Palogo Compaoré</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
-	</body> 
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .bio {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .bio img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 0.5rem 0;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenue sur ma page de présentation!</h1>
+    </header>
+
+    <div class="container">
+        <!-- Section Biographie -->
+        <section class="bio">
+            <img src="photo1.jpeg" alt="Votre Photo">
+            <h2>Laetitia Palogo Compaoré</h2>
+            <p>Linguiste confirmée et data Analyste en puissance !<br>
+                Sur ce site, vous trouverez quelques ressources pour découvrir mon parcours et mes récents projets data.</p>
+        </section>
+
+        <!-- Section Liens rapides -->
+        <section class="links">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="https://your-cv-link.com" target="_blank">Mon CV</a></li>
+                <li><a href="https://www.linkedin.com/in/laetitiapalogo/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://theses.fr/2017USPCC170" target="_blank">Thèse de doctorat</a></li>
+            </ul>
+        </section>
+
+        <!-- Section Mission Data -->
+        <section>
+            <h3>Mission Data</h3>
+            <p>Je partage ici un mini-projet réalisé en deux jours. Le but du projet est de proposer un dashboard pour un
+                cabinet de conseil souhaitant aider ses clients à améliorer le bien-être et la performance de leurs
+                employés.</p>
+            <p>Lien vers le dataset : <a href="https://www.kaggle.com/datasets/adityaab1407/employee-productivity-and-satisfaction-hr-data/suggestions?status=pending&yourSuggestions=true" target="_blank">Employee Productivity and Satisfaction HR Data</a></p>
+
+            <h4>Étapes du projet :</h4>
+            <ol>
+                <li>
+                    <strong>Étape 1 :</strong> Documentation sur les indicateurs clés de la satisfaction et de la productivité
+                    des employés (KPI).
+                    <ul>
+                        <li>Informations générales des employés : salaire moyen, âge moyen, temps moyen d'embauche.</li>
+                        <li>Satisfaction : Note moyenne, catégories (Détracteurs, Passifs, Promoteurs), calcul du ENPS.</li>
+                        <li>Productivité : Productivité moyenne, projets terminés, score moyen de feedback.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Étape 2 :</strong> Analyse exploratoire des données (EDA).
+                    <p>L’EDA permet de détecter les erreurs, identifier les valeurs aberrantes et trouver les relations
+                        intéressantes entre les variables.</p>
+                    <p>Voir le notebook : <a href="https://colab.research.google.com/drive/1LC3XvOHIFiCUZBO2yfR8kXQAcLRuXYug#scrollTo=4RMYv6EqrBl9" target="_blank">EDA Mission Data RH</a></p>
+                </li>
+                <li>
+                    <strong>Étape 3 :</strong> Création du dashboard sur Power BI.
+                    <p><a href="" target="_blank">Cliquez ici pour voir le dashboard.</a></p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Section Projets -->
+        <section class="links">
+            <h3>Mes projets</h3>
+            <ul>
+                <li><a href="" target="_blank">Projet 1 : [Nom du Projet]</a></li>
+                <li><a href="" target="_blank">Projet 2 : [Nom du Projet]</a></li>
+                <li><a href="" target="_blank">Projet 3 : [Nom du Projet]</a></li>
+                <li><a href="" target="_blank">Projet 4 : [Nom du Projet]</a></li>
+                <li><a href="" target="_blank">Projet 5 : [Nom du Projet]</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Laetitia Palogo Compaoré.</p>
+    </footer>
+</body>
+
 </html>
